@@ -11,3 +11,7 @@ function jump() {
 document.addEventListener("keydown", function (event) {
   jump();
 })
+
+if(dino) {
+  console.log("Dino element found:", dino);
+}
