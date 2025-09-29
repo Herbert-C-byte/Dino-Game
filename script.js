@@ -13,5 +13,6 @@ document.addEventListener("keydown", function (event) {
 })
 
 if(dino) {
-  console.log("Dino element found:", dino);
+  console.log("1 Dino element founded:", dino);
+  console.log("Return to code");
 }
