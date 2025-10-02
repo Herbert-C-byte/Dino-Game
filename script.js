@@ -16,3 +16,5 @@ if(dino) {
   console.log("1 Dino element founded:", dino);
   console.log("Return to code");
 }
+
+console.log("2 Dino element founded:", dino);
