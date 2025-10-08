@@ -1,11 +1,14 @@
 const dino = document.getElementById("dino");
 
 function jump() {
-  dino.classList.add("jump");
+  if(dino.classList != "jump"){
+    dino.classList.add("jump");
 
-  setTimeout(() => {
+    setTimeout(() => {
     dino.classList.remove("jump");
-  }, 300);
+    }, 300);
+  }
+  
 }
 
 document.addEventListener("keydown", function (event) {
