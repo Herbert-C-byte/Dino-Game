@@ -1,4 +1,5 @@
 const dino = document.getElementById("dino");
+const cactus = document.getElementById("cactus");
 
 function jump() {
   if(dino.classList != "jump"){
@@ -11,13 +12,21 @@ function jump() {
   
 }
 
+let isAlive = setInterval(function () {
+  // get current Y position
+  let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+
+
+  // get current X position
+  let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+
+
+  // Detect collision
+  if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+    alert("Game Over!");
+  }
+}, 10)
+
 document.addEventListener("keydown", function (event) {
   jump();
 })
-
-if(dino) {
-  console.log("1 Dino element founded:", dino);
-  console.log("Return to code");
-}
-
-console.log("2 Dino element founded:", dino);
