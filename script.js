@@ -23,7 +23,8 @@ let isAlive = setInterval(function () {
 
   // Detect collision
   if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-    alert("Game Over!");
+    alert("Game Over! Start again!");
+    console.log("Game Over");
   }
 }, 10)
 
