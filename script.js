@@ -30,4 +30,5 @@ let isAlive = setInterval(function () {
 
 document.addEventListener("keydown", function (event) {
   jump();
+  console.log(event);
 })
